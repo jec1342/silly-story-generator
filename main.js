@@ -18,7 +18,13 @@ let newStory = storyText;
 let xItem = randomValueFromArray(insertX)
 let yItem = randomValueFromArray(insertY)
 let zItem = randomValueFromArray(insertZ)
-  if(customName.value !== '') {
+
+newStory = newStory.replace(':insertx:', xItem);
+    newStory = newStory.replace(':inserty:', yItem);
+    newStory = newStory.replace(':insertz:', zItem);
+    newStory = newStory.replace(':insertx:', xItem);
+  
+    if(customName.value !== '') {
     let name = customName.value;
 
   }
